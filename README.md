@@ -45,23 +45,28 @@ Features
 4. Auto Backup: Automatically saves a backup of files within a local folder upon closing the application.
 
 ## Install app
+```sh
 npm i
+```
+```sh
 npm run dev
+```
 
 ## Start app
 npm run dev
 
-## How to package the app (https://www.electronjs.org/docs/latest/tutorial/tutorial-packaging)
-### install
+## How to package the app 
+https://www.electronjs.org/docs/latest/tutorial/tutorial-packaging
+# install
 npm install --save-dev @electron-forge/cli
 npx electron-forge import
 
-### Add in package.json scripts (already there):
+# Add in package.json scripts (already there):
 "scripts": {
   "start": "electron-forge start",
   "package": "electron-forge package",
   "make": "electron-forge make"
 },
 
-### Creating a distributable
+# Creating a distributable
 npm run make
