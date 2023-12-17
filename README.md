@@ -58,15 +58,21 @@ npm run dev
 ## How to package the app 
 https://www.electronjs.org/docs/latest/tutorial/tutorial-packaging
 # install
+```sh
 npm install --save-dev @electron-forge/cli
 npx electron-forge import
+```
 
 # Add in package.json scripts (already there):
+```sh
 "scripts": {
   "start": "electron-forge start",
   "package": "electron-forge package",
   "make": "electron-forge make"
-},
+}
+```
 
 # Creating a distributable
+```sh
 npm run make
+```
