@@ -12,6 +12,10 @@
   - [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) (error checking)
 - [NVM](https://github.com/nvm-sh/nvm) (mac only. helps to manage multiple node.js versions on your machine)
 
+# Preview
+![screenshot](ui.png)
+
+
 ## Getting Started
 
 1. Clone this repo: git clone https://github.com/georgiana550/electron-save-files-and-directories.git

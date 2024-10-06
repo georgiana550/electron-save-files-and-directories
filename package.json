@@ -29,6 +29,7 @@
     "@mui/material": "^5.14.19",
     "electron-context-menu": "^3.6.1",
     "electron-squirrel-startup": "^1.0.0",
+    "electron-typescript-react-mui": "file:",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

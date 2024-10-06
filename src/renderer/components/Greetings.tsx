@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
   Avatar,
+  Box,
   Button,
   CircularProgress,
   Container,
@@ -16,7 +17,7 @@ import {
 } from "@mui/material";
 import { Delete } from "@mui/icons-material";
 import { extname, basename } from "path";
-import { getLogoImage } from "./Utils";
+import { getLogoImage, getNotFoundImage } from "./Utils";
 import _ from "lodash";
 import { grey, yellow } from "@mui/material/colors";
 import styled from "styled-components";
@@ -205,6 +206,27 @@ export const Greetings = () => {
           </Grid>
         </Grid>
       )}
+      {info !== dropFileText &&
+        selectedFiles.length === 0 &&
+        selectedDirectories.length === 0 && (
+          <Grid
+            container
+            justifyContent={"center"}
+            columns={3}
+            spacing={3}
+            marginTop="2rem"
+          >
+            <Box
+              component="img"
+              sx={{
+                maxHeight: { xs: "75%", md: "50%" },
+                maxWidth: { xs: "75%", md: "50%" },
+              }}
+              alt="No image or directories selected."
+              src={getNotFoundImage()}
+            />
+          </Grid>
+        )}
       {info !== dropFileText && (
         <Grid
           container

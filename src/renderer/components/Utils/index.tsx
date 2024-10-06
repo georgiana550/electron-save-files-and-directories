@@ -41,6 +41,7 @@ import CSharpLogo from "../../../assets/svg/csharp.svg";
 import DirectoryLogo from "../../../assets/svg/directory.svg";
 import SvgLogo from "../../../assets/svg/svg.svg";
 import DefaultFileLogo from "../../../assets/svg/defaultFile.svg";
+import NotFoundLogo from "../../../assets/svg/not-found.svg";
 
 export const getLogoImage = (extension: string) => {
   const lowerCase = extension.toLowerCase();
@@ -160,3 +161,8 @@ export const getLogoImage = (extension: string) => {
       return DefaultFileLogo; // Return null for unsupported file types
   }
 };
+
+export const getNotFoundImage = () => {
+  return NotFoundLogo;
+};
+
